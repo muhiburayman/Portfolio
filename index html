@@ -1,0 +1,975 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Muhibur Ayman | Portfolio</title>
+
+  <meta name="description"
+    content="Portfolio of Muhibur Ayman, a CSE student at BRAC University, Digital Marketing Specialist and Graphics Designer based in Dhaka, Bangladesh.">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Background Decoration -->
+  <div class="background-glow glow-one"></div>
+  <div class="background-glow glow-two"></div>
+
+  <!-- Header -->
+  <header class="header">
+
+    <nav class="navbar container">
+
+      <a href="#home" class="logo">
+        Muhibur<span>.</span>
+      </a>
+
+      <div class="nav-menu" id="navMenu">
+
+        <a href="#home" class="nav-link active">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#education" class="nav-link">Education</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#contact" class="nav-link">Contact</a>
+
+      </div>
+
+      <div class="nav-actions">
+
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+
+      </div>
+
+    </nav>
+
+  </header>
+
+
+  <!-- Hero -->
+  <main>
+
+    <section class="hero section" id="home">
+
+      <div class="container hero-grid">
+
+        <div class="hero-content">
+
+          <div class="status-badge">
+            <span class="status-dot"></span>
+            Student & Freelancer
+          </div>
+
+          <p class="hero-intro">Hello, I'm</p>
+
+          <h1>
+            Muhibur
+            <span>Ayman.</span>
+          </h1>
+
+          <div class="hero-role">
+            <span id="typingText"></span>
+            <span class="typing-cursor">|</span>
+          </div>
+
+          <p class="hero-description">
+            A Computer Science & Engineering student at BRAC University,
+            combining technology, digital marketing and creative design
+            to build meaningful digital experiences.
+          </p>
+
+          <div class="hero-buttons">
+
+            <a href="#contact" class="btn btn-primary">
+              Let's Work Together
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+            <a href="#projects" class="btn btn-secondary">
+              View Projects
+            </a>
+
+          </div>
+
+          <div class="hero-socials">
+
+            <a href="https://www.linkedin.com/in/muhibur-ayman/"
+              target="_blank"
+              aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+
+            <a href="https://github.com/muhiburayman"
+              target="_blank"
+              aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
+
+            <a href="https://www.facebook.com/muhiburayman/"
+              target="_blank"
+              aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="mailto:stud.muhibur@gmail.com"
+              aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <div class="hero-visual">
+
+          <div class="photo-wrapper">
+
+            <div class="photo-decoration"></div>
+
+            <img
+              src="https://drive.google.com/uc?export=view&id=1IGTlfWKSwi_f8W2OUc2Eu4qHM0wFw-UD"
+              alt="Muhibur Ayman"
+              class="profile-photo">
+
+            <div class="floating-card card-cse">
+
+              <div class="floating-icon">
+                <i class="fa-solid fa-code"></i>
+              </div>
+
+              <div>
+                <span>Currently Studying</span>
+                <strong>BRACU CSE</strong>
+              </div>
+
+            </div>
+
+            <div class="floating-card card-location">
+
+              <div class="floating-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <span>Based in</span>
+                <strong>Dhaka, Bangladesh</strong>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+      <a href="#about" class="scroll-down">
+        <span>Scroll Down</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+
+    </section>
+
+
+    <!-- About -->
+    <section class="section" id="about">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">About Me</span>
+
+          <h2>
+            Technology meets
+            <span>creativity.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="about-grid">
+
+          <div class="about-text">
+
+            <p>
+              I'm <strong>Muhibur Ayman</strong>, a Computer Science &
+              Engineering student at BRAC University with a growing passion
+              for technology, digital marketing and creative design.
+            </p>
+
+            <p>
+              Alongside my CSE journey, I'm developing practical skills in
+              digital marketing, SEO, social media marketing, WordPress,
+              data mining and scraping, and graphics design. I enjoy turning
+              ideas into visual and digital experiences through technology
+              and creativity.
+            </p>
+
+            <p>
+              I've completed my foundation in C programming and I'm currently
+              expanding my programming knowledge with Python, with Java next
+              on my learning roadmap. My freelancing training has also given
+              me hands-on exposure to digital marketing and WordPress
+              e-commerce customization.
+            </p>
+
+            <p>
+              My goal is to combine technology, creativity and digital
+              strategy to build useful digital experiences and help
+              businesses establish a stronger online presence.
+            </p>
+
+            <a href="#contact" class="text-link">
+              Let's connect
+              <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+          </div>
+
+
+          <div class="about-stats">
+
+            <div class="stat-card">
+              <span class="stat-number">5.00</span>
+              <span class="stat-title">SSC GPA</span>
+              <span class="stat-description">Science • 2023</span>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-number">5.00</span>
+              <span class="stat-title">HSC GPA</span>
+              <span class="stat-description">Science • 2025</span>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-number">2026</span>
+              <span class="stat-title">BRACU Journey</span>
+              <span class="stat-description">CSE • Fall Intake</span>
+            </div>
+
+            <div class="stat-card">
+              <span class="stat-number">3+</span>
+              <span class="stat-title">Creative Fields</span>
+              <span class="stat-description">
+                Tech • Marketing • Design
+              </span>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Education -->
+    <section class="section education-section" id="education">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">Education</span>
+
+          <h2>
+            My academic
+            <span>journey.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-card">
+
+              <div class="timeline-date">
+                2026 - 2030
+              </div>
+
+              <h3>
+                B.Sc. in Computer Science & Engineering
+              </h3>
+
+              <h4>BRAC University</h4>
+
+              <p>
+                Currently enrolled in the Fall 2026 intake and beginning
+                my journey in Computer Science & Engineering.
+              </p>
+
+              <div class="timeline-tags">
+                <span>CSE</span>
+                <span>Fall 2026</span>
+                <span>Currently Enrolled</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-card">
+
+              <div class="timeline-date">
+                2025
+              </div>
+
+              <h3>
+                Higher Secondary Certificate
+              </h3>
+
+              <h4>St. Joseph Higher Secondary School</h4>
+
+              <p>
+                Completed Higher Secondary education in the Science group.
+              </p>
+
+              <div class="timeline-tags">
+                <span>Science</span>
+                <span>GPA 5.00 / 5.00</span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="timeline-item">
+
+            <div class="timeline-marker"></div>
+
+            <div class="timeline-card">
+
+              <div class="timeline-date">
+                2023
+              </div>
+
+              <h3>
+                Secondary School Certificate
+              </h3>
+
+              <h4>Monipur High School & College</h4>
+
+              <p>
+                Completed Secondary education in the Science group.
+              </p>
+
+              <div class="timeline-tags">
+                <span>Science</span>
+                <span>GPA 5.00 / 5.00</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Skills -->
+    <section class="section" id="skills">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">Skills</span>
+
+          <h2>
+            What I'm currently
+            <span>working with.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="skills-grid">
+
+          <div class="skill-category">
+
+            <div class="skill-category-icon">
+              <i class="fa-solid fa-chart-line"></i>
+            </div>
+
+            <h3>Digital Marketing</h3>
+
+            <div class="skill-tags">
+              <span>SEO</span>
+              <span>Social Media Marketing</span>
+              <span>Data Mining</span>
+              <span>Data Scraping</span>
+              <span>WordPress Customization</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category">
+
+            <div class="skill-category-icon">
+              <i class="fa-solid fa-pen-nib"></i>
+            </div>
+
+            <h3>Graphics Design</h3>
+
+            <div class="skill-tags">
+              <span>Adobe Photoshop</span>
+              <span>Adobe Illustrator</span>
+              <span>Canva</span>
+              <span>Logo Design</span>
+              <span>Business Card</span>
+              <span>Brochure</span>
+              <span>Flyer Design</span>
+              <span>T-Shirt Design</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category">
+
+            <div class="skill-category-icon">
+              <i class="fa-solid fa-laptop-code"></i>
+            </div>
+
+            <h3>Web & Development</h3>
+
+            <div class="skill-tags">
+              <span>HTML</span>
+              <span>WordPress</span>
+              <span>GitHub</span>
+              <span>Netlify</span>
+            </div>
+
+          </div>
+
+
+          <div class="skill-category">
+
+            <div class="skill-category-icon">
+              <i class="fa-solid fa-terminal"></i>
+            </div>
+
+            <h3>Programming</h3>
+
+            <div class="programming-list">
+
+              <div class="programming-item">
+                <span>C</span>
+                <span class="status completed">Completed</span>
+              </div>
+
+              <div class="programming-item">
+                <span>Python</span>
+                <span class="status learning">Learning</span>
+              </div>
+
+              <div class="programming-item">
+                <span>Java</span>
+                <span class="status planned">Next</span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Training -->
+    <section class="section training-section">
+
+      <div class="container">
+
+        <div class="training-card">
+
+          <div class="training-content">
+
+            <span class="section-label">
+              Professional Training
+            </span>
+
+            <h2>
+              DYD Government
+              <span>Freelancing Training</span>
+            </h2>
+
+            <p class="training-company">
+              E-Learning & Earning Ltd.
+            </p>
+
+            <p class="training-description">
+              Currently undertaking professional freelancing training
+              focused on digital marketing and practical online business
+              skills.
+            </p>
+
+
+            <div class="training-details">
+
+              <div>
+                <i class="fa-regular fa-calendar"></i>
+
+                <span>
+                  July 1 - September 30, 2026
+                </span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-user-tie"></i>
+
+                <span>
+                  Trainer: Md. Labib Islam
+                </span>
+              </div>
+
+              <div>
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <span>
+                  Digital Marketing
+                </span>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="training-skills">
+
+            <h3>Key Learning Areas</h3>
+
+            <div class="training-skill">
+              <i class="fa-solid fa-check"></i>
+              Social Media Marketing
+            </div>
+
+            <div class="training-skill">
+              <i class="fa-solid fa-check"></i>
+              Search Engine Optimization
+            </div>
+
+            <div class="training-skill">
+              <i class="fa-solid fa-check"></i>
+              Data Mining & Scraping
+            </div>
+
+            <div class="training-skill">
+              <i class="fa-solid fa-check"></i>
+              WordPress Customization
+            </div>
+
+            <div class="training-skill">
+              <i class="fa-solid fa-check"></i>
+              E-commerce Website Customization
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Services -->
+    <section class="section" id="services">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">Services</span>
+
+          <h2>
+            How I can
+            <span>help.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="services-grid">
+
+          <article class="service-card">
+
+            <span class="service-number">01</span>
+
+            <i class="fa-solid fa-globe service-icon"></i>
+
+            <h3>Web Design</h3>
+
+            <p>
+              Clean, responsive and modern websites focused on usability
+              and professional presentation.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">02</span>
+
+            <i class="fa-brands fa-wordpress service-icon"></i>
+
+            <h3>WordPress Development</h3>
+
+            <p>
+              WordPress website customization and e-commerce website
+              setup tailored to business needs.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">03</span>
+
+            <i class="fa-solid fa-magnifying-glass service-icon"></i>
+
+            <h3>SEO</h3>
+
+            <p>
+              Search optimization strategies designed to improve
+              online visibility and organic discoverability.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">04</span>
+
+            <i class="fa-solid fa-bullhorn service-icon"></i>
+
+            <h3>Digital Marketing</h3>
+
+            <p>
+              Digital marketing solutions focused on audience growth,
+              reach and online brand presence.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">05</span>
+
+            <i class="fa-solid fa-rectangle-ad service-icon"></i>
+
+            <h3>Meta & Google Ads</h3>
+
+            <p>
+              Advertising campaign support for reaching targeted
+              audiences through major digital platforms.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">06</span>
+
+            <i class="fa-solid fa-palette service-icon"></i>
+
+            <h3>Graphics Design</h3>
+
+            <p>
+              Creative graphics including logos, flyers, brochures,
+              business cards and social media assets.
+            </p>
+
+          </article>
+
+
+          <article class="service-card">
+
+            <span class="service-number">07</span>
+
+            <i class="fa-solid fa-hashtag service-icon"></i>
+
+            <h3>Social Media Marketing</h3>
+
+            <p>
+              Helping businesses communicate effectively and build
+              stronger engagement across social platforms.
+            </p>
+
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Projects -->
+    <section class="section projects-section" id="projects">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <span class="section-label">Projects</span>
+
+          <h2>
+            Selected
+            <span>work.</span>
+          </h2>
+
+        </div>
+
+
+        <div class="projects-placeholder">
+
+          <div class="projects-placeholder-icon">
+            <i class="fa-solid fa-code-branch"></i>
+          </div>
+
+          <h3>Projects Coming Soon</h3>
+
+          <p>
+            I'm currently building and documenting projects across
+            programming, web development, digital marketing and design.
+            They will appear here soon.
+          </p>
+
+          <a href="https://github.com/muhiburayman"
+            target="_blank"
+            class="btn btn-secondary">
+
+            Visit My GitHub
+
+            <i class="fa-brands fa-github"></i>
+
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- Contact -->
+    <section class="section contact-section" id="contact">
+
+      <div class="container">
+
+        <div class="contact-wrapper">
+
+          <div class="contact-content">
+
+            <span class="section-label">
+              Get In Touch
+            </span>
+
+            <h2>
+              Have an idea?
+              <span>Let's talk.</span>
+            </h2>
+
+            <p>
+              Whether you have a project, freelance opportunity,
+              collaboration idea or simply want to connect, feel free
+              to reach out.
+            </p>
+
+            <a href="mailto:stud.muhibur@gmail.com"
+              class="contact-email">
+
+              stud.muhibur@gmail.com
+
+              <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+            </a>
+
+
+            <div class="contact-socials">
+
+              <a href="https://www.linkedin.com/in/muhibur-ayman/"
+                target="_blank">
+
+                <i class="fa-brands fa-linkedin-in"></i>
+                LinkedIn
+
+              </a>
+
+              <a href="https://github.com/muhiburayman"
+                target="_blank">
+
+                <i class="fa-brands fa-github"></i>
+                GitHub
+
+              </a>
+
+              <a href="https://www.facebook.com/muhiburayman/"
+                target="_blank">
+
+                <i class="fa-brands fa-facebook-f"></i>
+                Facebook
+
+              </a>
+
+              <a href="https://wa.me/8801552102170"
+                target="_blank">
+
+                <i class="fa-brands fa-whatsapp"></i>
+                WhatsApp
+
+              </a>
+
+            </div>
+
+          </div>
+
+
+          <div class="contact-card">
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+
+              <div>
+                <span>Location</span>
+                <strong>Dhaka, Bangladesh</strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+
+              <div>
+                <span>Email</span>
+
+                <strong>
+                  stud.muhibur@gmail.com
+                </strong>
+              </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+              <div class="contact-icon">
+                <i class="fa-brands fa-whatsapp"></i>
+              </div>
+
+              <div>
+                <span>WhatsApp</span>
+                <strong>+880 1552-102170</strong>
+              </div>
+
+            </div>
+
+
+            <a href="https://wa.me/8801552102170"
+              target="_blank"
+              class="btn btn-primary full-width">
+
+              Message on WhatsApp
+
+              <i class="fa-brands fa-whatsapp"></i>
+
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Footer -->
+  <footer class="footer">
+
+    <div class="container footer-content">
+
+      <a href="#home" class="logo">
+        Muhibur<span>.</span>
+      </a>
+
+      <p>
+        © <span id="currentYear"></span> Muhibur Ayman.
+        Built with passion & code.
+      </p>
+
+      <a href="#home" class="back-to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
