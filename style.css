@@ -1,975 +1,1249 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ================================
+   GLOBAL VARIABLES
+================================ */
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+:root {
+  --bg: #07191c;
+  --bg-secondary: #0b2528;
+  --card: rgba(18, 84, 79, 0.16);
 
-  <title>Muhibur Ayman | Portfolio</title>
+  --text: #f4f9f7;
+  --text-secondary: #a7bbb6;
 
-  <meta name="description"
-    content="Portfolio of Muhibur Ayman, a CSE student at BRAC University, Digital Marketing Specialist and Graphics Designer based in Dhaka, Bangladesh.">
-
-  <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap"
-    rel="stylesheet">
-
-  <!-- Font Awesome -->
-  <link rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-
-  <!-- CSS -->
-  <link rel="stylesheet" href="style.css">
-</head>
-
-<body>
-
-  <!-- Background Decoration -->
-  <div class="background-glow glow-one"></div>
-  <div class="background-glow glow-two"></div>
-
-  <!-- Header -->
-  <header class="header">
-
-    <nav class="navbar container">
-
-      <a href="#home" class="logo">
-        Muhibur<span>.</span>
-      </a>
-
-      <div class="nav-menu" id="navMenu">
-
-        <a href="#home" class="nav-link active">Home</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#education" class="nav-link">Education</a>
-        <a href="#skills" class="nav-link">Skills</a>
-        <a href="#services" class="nav-link">Services</a>
-        <a href="#projects" class="nav-link">Projects</a>
-        <a href="#contact" class="nav-link">Contact</a>
-
-      </div>
-
-      <div class="nav-actions">
-
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
-          <i class="fa-solid fa-moon"></i>
-        </button>
-
-        <button class="menu-toggle" id="menuToggle">
-          <i class="fa-solid fa-bars"></i>
-        </button>
-
-      </div>
-
-    </nav>
-
-  </header>
-
-
-  <!-- Hero -->
-  <main>
-
-    <section class="hero section" id="home">
-
-      <div class="container hero-grid">
-
-        <div class="hero-content">
-
-          <div class="status-badge">
-            <span class="status-dot"></span>
-            Student & Freelancer
-          </div>
-
-          <p class="hero-intro">Hello, I'm</p>
-
-          <h1>
-            Muhibur
-            <span>Ayman.</span>
-          </h1>
-
-          <div class="hero-role">
-            <span id="typingText"></span>
-            <span class="typing-cursor">|</span>
-          </div>
-
-          <p class="hero-description">
-            A Computer Science & Engineering student at BRAC University,
-            combining technology, digital marketing and creative design
-            to build meaningful digital experiences.
-          </p>
-
-          <div class="hero-buttons">
-
-            <a href="#contact" class="btn btn-primary">
-              Let's Work Together
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-            <a href="#projects" class="btn btn-secondary">
-              View Projects
-            </a>
-
-          </div>
-
-          <div class="hero-socials">
-
-            <a href="https://www.linkedin.com/in/muhibur-ayman/"
-              target="_blank"
-              aria-label="LinkedIn">
-              <i class="fa-brands fa-linkedin-in"></i>
-            </a>
-
-            <a href="https://github.com/muhiburayman"
-              target="_blank"
-              aria-label="GitHub">
-              <i class="fa-brands fa-github"></i>
-            </a>
-
-            <a href="https://www.facebook.com/muhiburayman/"
-              target="_blank"
-              aria-label="Facebook">
-              <i class="fa-brands fa-facebook-f"></i>
-            </a>
-
-            <a href="mailto:stud.muhibur@gmail.com"
-              aria-label="Email">
-              <i class="fa-solid fa-envelope"></i>
-            </a>
-
-          </div>
-
-        </div>
-
-
-        <div class="hero-visual">
-
-          <div class="photo-wrapper">
-
-            <div class="photo-decoration"></div>
-
-            <img
-              src="https://drive.google.com/uc?export=view&id=1IGTlfWKSwi_f8W2OUc2Eu4qHM0wFw-UD"
-              alt="Muhibur Ayman"
-              class="profile-photo">
-
-            <div class="floating-card card-cse">
-
-              <div class="floating-icon">
-                <i class="fa-solid fa-code"></i>
-              </div>
-
-              <div>
-                <span>Currently Studying</span>
-                <strong>BRACU CSE</strong>
-              </div>
-
-            </div>
-
-            <div class="floating-card card-location">
-
-              <div class="floating-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-
-              <div>
-                <span>Based in</span>
-                <strong>Dhaka, Bangladesh</strong>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-      <a href="#about" class="scroll-down">
-        <span>Scroll Down</span>
-        <i class="fa-solid fa-arrow-down"></i>
-      </a>
-
-    </section>
-
-
-    <!-- About -->
-    <section class="section" id="about">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <span class="section-label">About Me</span>
-
-          <h2>
-            Technology meets
-            <span>creativity.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="about-grid">
-
-          <div class="about-text">
-
-            <p>
-              I'm <strong>Muhibur Ayman</strong>, a Computer Science &
-              Engineering student at BRAC University with a growing passion
-              for technology, digital marketing and creative design.
-            </p>
-
-            <p>
-              Alongside my CSE journey, I'm developing practical skills in
-              digital marketing, SEO, social media marketing, WordPress,
-              data mining and scraping, and graphics design. I enjoy turning
-              ideas into visual and digital experiences through technology
-              and creativity.
-            </p>
-
-            <p>
-              I've completed my foundation in C programming and I'm currently
-              expanding my programming knowledge with Python, with Java next
-              on my learning roadmap. My freelancing training has also given
-              me hands-on exposure to digital marketing and WordPress
-              e-commerce customization.
-            </p>
-
-            <p>
-              My goal is to combine technology, creativity and digital
-              strategy to build useful digital experiences and help
-              businesses establish a stronger online presence.
-            </p>
-
-            <a href="#contact" class="text-link">
-              Let's connect
-              <i class="fa-solid fa-arrow-right"></i>
-            </a>
-
-          </div>
-
-
-          <div class="about-stats">
-
-            <div class="stat-card">
-              <span class="stat-number">5.00</span>
-              <span class="stat-title">SSC GPA</span>
-              <span class="stat-description">Science • 2023</span>
-            </div>
-
-            <div class="stat-card">
-              <span class="stat-number">5.00</span>
-              <span class="stat-title">HSC GPA</span>
-              <span class="stat-description">Science • 2025</span>
-            </div>
-
-            <div class="stat-card">
-              <span class="stat-number">2026</span>
-              <span class="stat-title">BRACU Journey</span>
-              <span class="stat-description">CSE • Fall Intake</span>
-            </div>
-
-            <div class="stat-card">
-              <span class="stat-number">3+</span>
-              <span class="stat-title">Creative Fields</span>
-              <span class="stat-description">
-                Tech • Marketing • Design
-              </span>
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Education -->
-    <section class="section education-section" id="education">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <span class="section-label">Education</span>
-
-          <h2>
-            My academic
-            <span>journey.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="timeline">
-
-          <div class="timeline-item">
-
-            <div class="timeline-marker"></div>
-
-            <div class="timeline-card">
-
-              <div class="timeline-date">
-                2026 - 2030
-              </div>
-
-              <h3>
-                B.Sc. in Computer Science & Engineering
-              </h3>
-
-              <h4>BRAC University</h4>
-
-              <p>
-                Currently enrolled in the Fall 2026 intake and beginning
-                my journey in Computer Science & Engineering.
-              </p>
-
-              <div class="timeline-tags">
-                <span>CSE</span>
-                <span>Fall 2026</span>
-                <span>Currently Enrolled</span>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-marker"></div>
-
-            <div class="timeline-card">
-
-              <div class="timeline-date">
-                2025
-              </div>
-
-              <h3>
-                Higher Secondary Certificate
-              </h3>
-
-              <h4>St. Joseph Higher Secondary School</h4>
-
-              <p>
-                Completed Higher Secondary education in the Science group.
-              </p>
-
-              <div class="timeline-tags">
-                <span>Science</span>
-                <span>GPA 5.00 / 5.00</span>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="timeline-item">
-
-            <div class="timeline-marker"></div>
-
-            <div class="timeline-card">
-
-              <div class="timeline-date">
-                2023
-              </div>
-
-              <h3>
-                Secondary School Certificate
-              </h3>
-
-              <h4>Monipur High School & College</h4>
-
-              <p>
-                Completed Secondary education in the Science group.
-              </p>
-
-              <div class="timeline-tags">
-                <span>Science</span>
-                <span>GPA 5.00 / 5.00</span>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Skills -->
-    <section class="section" id="skills">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <span class="section-label">Skills</span>
-
-          <h2>
-            What I'm currently
-            <span>working with.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="skills-grid">
-
-          <div class="skill-category">
-
-            <div class="skill-category-icon">
-              <i class="fa-solid fa-chart-line"></i>
-            </div>
-
-            <h3>Digital Marketing</h3>
-
-            <div class="skill-tags">
-              <span>SEO</span>
-              <span>Social Media Marketing</span>
-              <span>Data Mining</span>
-              <span>Data Scraping</span>
-              <span>WordPress Customization</span>
-            </div>
-
-          </div>
-
-
-          <div class="skill-category">
-
-            <div class="skill-category-icon">
-              <i class="fa-solid fa-pen-nib"></i>
-            </div>
-
-            <h3>Graphics Design</h3>
-
-            <div class="skill-tags">
-              <span>Adobe Photoshop</span>
-              <span>Adobe Illustrator</span>
-              <span>Canva</span>
-              <span>Logo Design</span>
-              <span>Business Card</span>
-              <span>Brochure</span>
-              <span>Flyer Design</span>
-              <span>T-Shirt Design</span>
-            </div>
-
-          </div>
-
-
-          <div class="skill-category">
-
-            <div class="skill-category-icon">
-              <i class="fa-solid fa-laptop-code"></i>
-            </div>
-
-            <h3>Web & Development</h3>
-
-            <div class="skill-tags">
-              <span>HTML</span>
-              <span>WordPress</span>
-              <span>GitHub</span>
-              <span>Netlify</span>
-            </div>
-
-          </div>
-
-
-          <div class="skill-category">
-
-            <div class="skill-category-icon">
-              <i class="fa-solid fa-terminal"></i>
-            </div>
-
-            <h3>Programming</h3>
-
-            <div class="programming-list">
-
-              <div class="programming-item">
-                <span>C</span>
-                <span class="status completed">Completed</span>
-              </div>
-
-              <div class="programming-item">
-                <span>Python</span>
-                <span class="status learning">Learning</span>
-              </div>
-
-              <div class="programming-item">
-                <span>Java</span>
-                <span class="status planned">Next</span>
-              </div>
-
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Training -->
-    <section class="section training-section">
-
-      <div class="container">
-
-        <div class="training-card">
-
-          <div class="training-content">
-
-            <span class="section-label">
-              Professional Training
-            </span>
-
-            <h2>
-              DYD Government
-              <span>Freelancing Training</span>
-            </h2>
-
-            <p class="training-company">
-              E-Learning & Earning Ltd.
-            </p>
-
-            <p class="training-description">
-              Currently undertaking professional freelancing training
-              focused on digital marketing and practical online business
-              skills.
-            </p>
-
-
-            <div class="training-details">
-
-              <div>
-                <i class="fa-regular fa-calendar"></i>
-
-                <span>
-                  July 1 - September 30, 2026
-                </span>
-              </div>
-
-              <div>
-                <i class="fa-solid fa-user-tie"></i>
-
-                <span>
-                  Trainer: Md. Labib Islam
-                </span>
-              </div>
-
-              <div>
-                <i class="fa-solid fa-graduation-cap"></i>
-
-                <span>
-                  Digital Marketing
-                </span>
-              </div>
-
-            </div>
-
-          </div>
-
-
-          <div class="training-skills">
-
-            <h3>Key Learning Areas</h3>
-
-            <div class="training-skill">
-              <i class="fa-solid fa-check"></i>
-              Social Media Marketing
-            </div>
-
-            <div class="training-skill">
-              <i class="fa-solid fa-check"></i>
-              Search Engine Optimization
-            </div>
-
-            <div class="training-skill">
-              <i class="fa-solid fa-check"></i>
-              Data Mining & Scraping
-            </div>
-
-            <div class="training-skill">
-              <i class="fa-solid fa-check"></i>
-              WordPress Customization
-            </div>
-
-            <div class="training-skill">
-              <i class="fa-solid fa-check"></i>
-              E-commerce Website Customization
-            </div>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Services -->
-    <section class="section" id="services">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <span class="section-label">Services</span>
-
-          <h2>
-            How I can
-            <span>help.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="services-grid">
-
-          <article class="service-card">
-
-            <span class="service-number">01</span>
-
-            <i class="fa-solid fa-globe service-icon"></i>
-
-            <h3>Web Design</h3>
-
-            <p>
-              Clean, responsive and modern websites focused on usability
-              and professional presentation.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">02</span>
-
-            <i class="fa-brands fa-wordpress service-icon"></i>
-
-            <h3>WordPress Development</h3>
-
-            <p>
-              WordPress website customization and e-commerce website
-              setup tailored to business needs.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">03</span>
-
-            <i class="fa-solid fa-magnifying-glass service-icon"></i>
-
-            <h3>SEO</h3>
-
-            <p>
-              Search optimization strategies designed to improve
-              online visibility and organic discoverability.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">04</span>
-
-            <i class="fa-solid fa-bullhorn service-icon"></i>
-
-            <h3>Digital Marketing</h3>
-
-            <p>
-              Digital marketing solutions focused on audience growth,
-              reach and online brand presence.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">05</span>
-
-            <i class="fa-solid fa-rectangle-ad service-icon"></i>
-
-            <h3>Meta & Google Ads</h3>
-
-            <p>
-              Advertising campaign support for reaching targeted
-              audiences through major digital platforms.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">06</span>
-
-            <i class="fa-solid fa-palette service-icon"></i>
-
-            <h3>Graphics Design</h3>
-
-            <p>
-              Creative graphics including logos, flyers, brochures,
-              business cards and social media assets.
-            </p>
-
-          </article>
-
-
-          <article class="service-card">
-
-            <span class="service-number">07</span>
-
-            <i class="fa-solid fa-hashtag service-icon"></i>
-
-            <h3>Social Media Marketing</h3>
-
-            <p>
-              Helping businesses communicate effectively and build
-              stronger engagement across social platforms.
-            </p>
-
-          </article>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Projects -->
-    <section class="section projects-section" id="projects">
-
-      <div class="container">
-
-        <div class="section-heading">
-
-          <span class="section-label">Projects</span>
-
-          <h2>
-            Selected
-            <span>work.</span>
-          </h2>
-
-        </div>
-
-
-        <div class="projects-placeholder">
-
-          <div class="projects-placeholder-icon">
-            <i class="fa-solid fa-code-branch"></i>
-          </div>
-
-          <h3>Projects Coming Soon</h3>
-
-          <p>
-            I'm currently building and documenting projects across
-            programming, web development, digital marketing and design.
-            They will appear here soon.
-          </p>
-
-          <a href="https://github.com/muhiburayman"
-            target="_blank"
-            class="btn btn-secondary">
-
-            Visit My GitHub
-
-            <i class="fa-brands fa-github"></i>
-
-          </a>
-
-        </div>
-
-      </div>
-
-    </section>
-
-
-    <!-- Contact -->
-    <section class="section contact-section" id="contact">
-
-      <div class="container">
-
-        <div class="contact-wrapper">
-
-          <div class="contact-content">
-
-            <span class="section-label">
-              Get In Touch
-            </span>
-
-            <h2>
-              Have an idea?
-              <span>Let's talk.</span>
-            </h2>
-
-            <p>
-              Whether you have a project, freelance opportunity,
-              collaboration idea or simply want to connect, feel free
-              to reach out.
-            </p>
-
-            <a href="mailto:stud.muhibur@gmail.com"
-              class="contact-email">
-
-              stud.muhibur@gmail.com
-
-              <i class="fa-solid fa-arrow-up-right-from-square"></i>
-
-            </a>
-
-
-            <div class="contact-socials">
-
-              <a href="https://www.linkedin.com/in/muhibur-ayman/"
-                target="_blank">
-
-                <i class="fa-brands fa-linkedin-in"></i>
-                LinkedIn
-
-              </a>
-
-              <a href="https://github.com/muhiburayman"
-                target="_blank">
-
-                <i class="fa-brands fa-github"></i>
-                GitHub
-
-              </a>
-
-              <a href="https://www.facebook.com/muhiburayman/"
-                target="_blank">
-
-                <i class="fa-brands fa-facebook-f"></i>
-                Facebook
-
-              </a>
-
-              <a href="https://wa.me/8801552102170"
-                target="_blank">
-
-                <i class="fa-brands fa-whatsapp"></i>
-                WhatsApp
-
-              </a>
-
-            </div>
-
-          </div>
-
-
-          <div class="contact-card">
-
-            <div class="contact-item">
-
-              <div class="contact-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-
-              <div>
-                <span>Location</span>
-                <strong>Dhaka, Bangladesh</strong>
-              </div>
-
-            </div>
-
-
-            <div class="contact-item">
-
-              <div class="contact-icon">
-                <i class="fa-solid fa-envelope"></i>
-              </div>
-
-              <div>
-                <span>Email</span>
-
-                <strong>
-                  stud.muhibur@gmail.com
-                </strong>
-              </div>
-
-            </div>
-
-
-            <div class="contact-item">
-
-              <div class="contact-icon">
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
-
-              <div>
-                <span>WhatsApp</span>
-                <strong>+880 1552-102170</strong>
-              </div>
-
-            </div>
-
-
-            <a href="https://wa.me/8801552102170"
-              target="_blank"
-              class="btn btn-primary full-width">
-
-              Message on WhatsApp
-
-              <i class="fa-brands fa-whatsapp"></i>
-
-            </a>
-
-          </div>
-
-        </div>
-
-      </div>
-
-    </section>
-
-  </main>
-
-
-  <!-- Footer -->
-  <footer class="footer">
-
-    <div class="container footer-content">
-
-      <a href="#home" class="logo">
-        Muhibur<span>.</span>
-      </a>
-
-      <p>
-        © <span id="currentYear"></span> Muhibur Ayman.
-        Built with passion & code.
-      </p>
-
-      <a href="#home" class="back-to-top">
-        <i class="fa-solid fa-arrow-up"></i>
-      </a>
-
-    </div>
-
-  </footer>
-
-
-  <script src="script.js"></script>
-
-</body>
-
-</html>
+  --primary: #2a835f;
+  --primary-light: #8bbb92;
+  --primary-dark: #12544f;
+
+  --border: rgba(255, 255, 255, 0.08);
+
+  --shadow: 0 30px 70px rgba(0, 0, 0, 0.28);
+
+  --font-primary: "Inter", sans-serif;
+  --font-heading: "Space Grotesk", sans-serif;
+
+  --transition: 0.3s ease;
+}
+
+
+body.light-mode {
+  --bg: #f4f8f6;
+  --bg-secondary: #eaf2ee;
+
+  --card: rgba(255, 255, 255, 0.85);
+
+  --text: #092328;
+  --text-secondary: #526661;
+
+  --border: rgba(9, 35, 40, 0.1);
+
+  --shadow: 0 30px 70px rgba(15, 70, 60, 0.12);
+}
+
+
+/* ================================
+   RESET
+================================ */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.7;
+  overflow-x: hidden;
+  transition: background var(--transition), color var(--transition);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font-family: inherit;
+}
+
+button {
+  border: 0;
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+/* ================================
+   GENERAL
+================================ */
+
+.container {
+  width: min(1180px, 90%);
+  margin: auto;
+}
+
+.section {
+  padding: 110px 0;
+  position: relative;
+}
+
+.section-heading {
+  margin-bottom: 55px;
+  max-width: 700px;
+}
+
+.section-label {
+  display: inline-block;
+  color: var(--primary-light);
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  margin-bottom: 14px;
+}
+
+.section-heading h2,
+.training-card h2,
+.contact-content h2 {
+  font-family: var(--font-heading);
+  font-size: clamp(36px, 5vw, 62px);
+  line-height: 1.08;
+  letter-spacing: -2px;
+}
+
+.section-heading h2 span,
+.training-card h2 span,
+.contact-content h2 span {
+  color: var(--primary-light);
+}
+
+.background-glow {
+  position: fixed;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  filter: blur(130px);
+  opacity: 0.12;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.glow-one {
+  background: var(--primary);
+  top: -200px;
+  right: -200px;
+}
+
+.glow-two {
+  background: var(--primary-light);
+  bottom: -250px;
+  left: -250px;
+}
+
+
+/* ================================
+   NAVBAR
+================================ */
+
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  transition: var(--transition);
+}
+
+.header.scrolled {
+  background: rgba(7, 25, 28, 0.87);
+  backdrop-filter: blur(18px);
+  border-bottom: 1px solid var(--border);
+}
+
+body.light-mode .header.scrolled {
+  background: rgba(244, 248, 246, 0.88);
+}
+
+.navbar {
+  height: 85px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-family: var(--font-heading);
+  font-size: 25px;
+  font-weight: 700;
+}
+
+.logo span {
+  color: var(--primary-light);
+}
+
+.nav-menu {
+  display: flex;
+  gap: 32px;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: var(--text-secondary);
+  position: relative;
+  transition: var(--transition);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--text);
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -8px;
+  background: var(--primary-light);
+  transition: var(--transition);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+.nav-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.theme-toggle,
+.menu-toggle {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: var(--card);
+  color: var(--text);
+  border: 1px solid var(--border);
+  transition: var(--transition);
+}
+
+.theme-toggle:hover,
+.menu-toggle:hover {
+  background: var(--primary);
+}
+
+.menu-toggle {
+  display: none;
+}
+
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding-top: 120px;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  background: var(--card);
+  font-size: 13px;
+  margin-bottom: 25px;
+}
+
+.status-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #5cf28b;
+  box-shadow: 0 0 15px #5cf28b;
+}
+
+.hero-intro {
+  color: var(--primary-light);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.hero h1 {
+  font-family: var(--font-heading);
+  font-size: clamp(62px, 8vw, 110px);
+  line-height: 0.95;
+  letter-spacing: -5px;
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--primary-light);
+}
+
+.hero-role {
+  min-height: 38px;
+  font-size: clamp(19px, 2.5vw, 26px);
+  color: var(--text-secondary);
+  margin-bottom: 22px;
+}
+
+.typing-cursor {
+  color: var(--primary-light);
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.hero-description {
+  max-width: 650px;
+  color: var(--text-secondary);
+  font-size: 17px;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.btn {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 23px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 14px;
+  transition: var(--transition);
+}
+
+.btn-primary {
+  background: var(--primary);
+  color: white;
+}
+
+.btn-primary:hover {
+  transform: translateY(-3px);
+  background: var(--primary-dark);
+  box-shadow: 0 15px 35px rgba(42, 131, 95, 0.25);
+}
+
+.btn-secondary {
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.btn-secondary:hover {
+  transform: translateY(-3px);
+  border-color: var(--primary-light);
+}
+
+.hero-socials {
+  display: flex;
+  gap: 12px;
+  margin-top: 35px;
+}
+
+.hero-socials a {
+  width: 42px;
+  height: 42px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.hero-socials a:hover {
+  background: var(--primary);
+  color: white;
+  transform: translateY(-4px);
+}
+
+.hero-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.photo-wrapper {
+  position: relative;
+  width: min(410px, 90%);
+  aspect-ratio: 0.85;
+}
+
+.profile-photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 35px;
+  position: relative;
+  z-index: 2;
+  box-shadow: var(--shadow);
+}
+
+.photo-decoration {
+  position: absolute;
+  inset: 25px -25px -25px 25px;
+  border: 1px solid var(--primary-light);
+  border-radius: 35px;
+  z-index: 0;
+}
+
+.floating-card {
+  position: absolute;
+  z-index: 5;
+  padding: 13px 16px;
+  border: 1px solid var(--border);
+  background: rgba(7, 25, 28, 0.85);
+  backdrop-filter: blur(15px);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  display: flex;
+  gap: 11px;
+  align-items: center;
+  animation: floating 4s ease-in-out infinite;
+}
+
+body.light-mode .floating-card {
+  background: rgba(255, 255, 255, 0.9);
+}
+
+.floating-card span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.floating-card strong {
+  display: block;
+  font-size: 13px;
+}
+
+.floating-icon {
+  width: 35px;
+  height: 35px;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: rgba(42, 131, 95, 0.2);
+  color: var(--primary-light);
+}
+
+.card-cse {
+  left: -70px;
+  top: 18%;
+}
+
+.card-location {
+  right: -75px;
+  bottom: 12%;
+  animation-delay: 1.2s;
+}
+
+@keyframes floating {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-12px);
+  }
+}
+
+.scroll-down {
+  position: absolute;
+  bottom: 35px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  align-items: center;
+}
+
+
+/* ================================
+   ABOUT
+================================ */
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+}
+
+.about-text p {
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.about-text strong {
+  color: var(--text);
+}
+
+.text-link {
+  color: var(--primary-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.about-stats {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 18px;
+}
+
+.stat-card {
+  padding: 28px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  transition: var(--transition);
+}
+
+.stat-card:hover {
+  transform: translateY(-7px);
+  border-color: rgba(139, 187, 146, 0.35);
+}
+
+.stat-number {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 37px;
+  font-weight: 700;
+  color: var(--primary-light);
+}
+
+.stat-title {
+  display: block;
+  font-weight: 700;
+}
+
+.stat-description {
+  display: block;
+  color: var(--text-secondary);
+  margin-top: 4px;
+  font-size: 12px;
+}
+
+
+/* ================================
+   EDUCATION
+================================ */
+
+.education-section {
+  background: var(--bg-secondary);
+}
+
+.timeline {
+  position: relative;
+  max-width: 850px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 8px;
+  top: 10px;
+  bottom: 10px;
+  width: 1px;
+  background: var(--border);
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 50px;
+  margin-bottom: 32px;
+}
+
+.timeline-marker {
+  position: absolute;
+  top: 22px;
+  left: 0;
+  width: 17px;
+  height: 17px;
+  border: 4px solid var(--bg-secondary);
+  background: var(--primary-light);
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px var(--primary-light);
+}
+
+.timeline-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  background: var(--card);
+  border-radius: 20px;
+}
+
+.timeline-date {
+  display: inline-block;
+  color: var(--primary-light);
+  font-size: 13px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.timeline-card h3 {
+  font-family: var(--font-heading);
+  font-size: 22px;
+  margin-bottom: 4px;
+}
+
+.timeline-card h4 {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 14px;
+}
+
+.timeline-card p {
+  color: var(--text-secondary);
+}
+
+.timeline-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 17px;
+}
+
+.timeline-tags span {
+  padding: 5px 10px;
+  background: rgba(42, 131, 95, 0.12);
+  color: var(--primary-light);
+  border-radius: 30px;
+  font-size: 11px;
+}
+
+
+/* ================================
+   SKILLS
+================================ */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.skill-category {
+  padding: 32px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--card);
+  transition: var(--transition);
+}
+
+.skill-category:hover {
+  transform: translateY(-5px);
+  border-color: rgba(139, 187, 146, 0.35);
+}
+
+.skill-category-icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: rgba(42, 131, 95, 0.13);
+  color: var(--primary-light);
+  margin-bottom: 20px;
+  font-size: 19px;
+}
+
+.skill-category h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 18px;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.skill-tags span {
+  padding: 7px 12px;
+  border: 1px solid var(--border);
+  border-radius: 30px;
+  font-size: 12px;
+  color: var(--text-secondary);
+}
+
+.programming-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.programming-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.status {
+  font-size: 10px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 4px 9px;
+  border-radius: 30px;
+}
+
+.completed {
+  background: rgba(83, 230, 130, 0.12);
+  color: #6ee799;
+}
+
+.learning {
+  background: rgba(242, 186, 75, 0.12);
+  color: #eec167;
+}
+
+.planned {
+  background: rgba(120, 150, 255, 0.12);
+  color: #93aaf8;
+}
+
+
+/* ================================
+   TRAINING
+================================ */
+
+.training-section {
+  background: var(--bg-secondary);
+}
+
+.training-card {
+  border-radius: 28px;
+  padding: 55px;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 70px;
+  border: 1px solid var(--border);
+  background: var(--card);
+}
+
+.training-company {
+  color: var(--primary-light);
+  font-weight: 600;
+  margin: 18px 0;
+}
+
+.training-description {
+  color: var(--text-secondary);
+  max-width: 650px;
+}
+
+.training-details {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.training-details div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: var(--text-secondary);
+}
+
+.training-details i {
+  color: var(--primary-light);
+  width: 20px;
+}
+
+.training-skills {
+  padding: 28px;
+  background: rgba(0, 0, 0, 0.08);
+  border-radius: 20px;
+}
+
+.training-skills h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 20px;
+}
+
+.training-skill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 11px 0;
+  color: var(--text-secondary);
+  border-bottom: 1px solid var(--border);
+}
+
+.training-skill i {
+  color: var(--primary-light);
+}
+
+
+/* ================================
+   SERVICES
+================================ */
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.service-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 22px;
+  background: var(--card);
+  position: relative;
+  transition: var(--transition);
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  border-color: rgba(139, 187, 146, 0.4);
+}
+
+.service-number {
+  position: absolute;
+  right: 25px;
+  top: 20px;
+  color: var(--text-secondary);
+  opacity: 0.4;
+  font-size: 12px;
+}
+
+.service-icon {
+  font-size: 26px;
+  color: var(--primary-light);
+  margin-bottom: 22px;
+}
+
+.service-card h3 {
+  font-family: var(--font-heading);
+  margin-bottom: 13px;
+}
+
+.service-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+}
+
+
+/* ================================
+   PROJECTS
+================================ */
+
+.projects-section {
+  background: var(--bg-secondary);
+}
+
+.projects-placeholder {
+  padding: 80px 30px;
+  border: 1px dashed rgba(139, 187, 146, 0.4);
+  border-radius: 25px;
+  text-align: center;
+  max-width: 800px;
+  margin: auto;
+  background: var(--card);
+}
+
+.projects-placeholder-icon {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto 20px;
+  background: rgba(42, 131, 95, 0.15);
+  color: var(--primary-light);
+  font-size: 25px;
+}
+
+.projects-placeholder h3 {
+  font-family: var(--font-heading);
+  font-size: 28px;
+  margin-bottom: 12px;
+}
+
+.projects-placeholder p {
+  color: var(--text-secondary);
+  max-width: 600px;
+  margin: 0 auto 27px;
+}
+
+
+/* ================================
+   CONTACT
+================================ */
+
+.contact-wrapper {
+  display: grid;
+  grid-template-columns: 1.1fr 0.9fr;
+  gap: 80px;
+}
+
+.contact-content p {
+  color: var(--text-secondary);
+  max-width: 650px;
+  margin: 25px 0;
+}
+
+.contact-email {
+  font-family: var(--font-heading);
+  font-size: clamp(18px, 2vw, 26px);
+  color: var(--primary-light);
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 35px;
+}
+
+.contact-socials a {
+  padding: 10px 14px;
+  border: 1px solid var(--border);
+  border-radius: 9px;
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  color: var(--text-secondary);
+  transition: var(--transition);
+}
+
+.contact-socials a:hover {
+  color: white;
+  background: var(--primary);
+  transform: translateY(-3px);
+}
+
+.contact-card {
+  padding: 30px;
+  border: 1px solid var(--border);
+  border-radius: 25px;
+  background: var(--card);
+}
+
+.contact-item {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  padding: 17px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.contact-icon {
+  flex: 0 0 45px;
+  width: 45px;
+  height: 45px;
+  display: grid;
+  place-items: center;
+  border-radius: 12px;
+  color: var(--primary-light);
+  background: rgba(42, 131, 95, 0.12);
+}
+
+.contact-item span {
+  display: block;
+  color: var(--text-secondary);
+  font-size: 11px;
+}
+
+.contact-item strong {
+  display: block;
+  font-size: 13px;
+  margin-top: 2px;
+}
+
+.full-width {
+  width: 100%;
+  margin-top: 25px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+.footer {
+  border-top: 1px solid var(--border);
+  padding: 25px 0;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-content p {
+  color: var(--text-secondary);
+  font-size: 12px;
+}
+
+.back-to-top {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--border);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  transition: var(--transition);
+}
+
+.back-to-top:hover {
+  background: var(--primary);
+  color: white;
+}
+
+
+/* ================================
+   SCROLL ANIMATION
+================================ */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 1000px) {
+
+  .hero-grid,
+  .about-grid,
+  .training-card,
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-content {
+    order: 1;
+  }
+
+  .hero-visual {
+    order: 0;
+  }
+
+  .hero {
+    padding-top: 140px;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-description {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-buttons,
+  .hero-socials {
+    justify-content: center;
+  }
+
+  .photo-wrapper {
+    width: 330px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .card-cse {
+    left: -50px;
+  }
+
+  .card-location {
+    right: -50px;
+  }
+
+}
+
+
+@media (max-width: 800px) {
+
+  .nav-menu {
+    position: fixed;
+    top: 85px;
+    left: 5%;
+    width: 90%;
+    flex-direction: column;
+    gap: 0;
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 18px;
+    padding: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-15px);
+    transition: var(--transition);
+    box-shadow: var(--shadow);
+  }
+
+  .nav-menu.open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  .nav-link {
+    padding: 13px;
+  }
+
+  .nav-link::after {
+    display: none;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+  }
+
+  .skills-grid,
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .training-card {
+    padding: 35px 25px;
+    gap: 35px;
+  }
+
+  .section {
+    padding: 80px 0;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .photo-wrapper {
+    width: 260px;
+  }
+
+  .photo-decoration {
+    inset: 14px -14px -14px 14px;
+  }
+
+  .floating-card {
+    padding: 9px 11px;
+  }
+
+  .card-cse {
+    left: -25px;
+  }
+
+  .card-location {
+    right: -30px;
+  }
+
+  .floating-card span {
+    font-size: 8px;
+  }
+
+  .floating-card strong {
+    font-size: 10px;
+  }
+
+  .floating-icon {
+    width: 30px;
+    height: 30px;
+  }
+
+  .about-stats {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-item {
+    padding-left: 35px;
+  }
+
+  .timeline-card {
+    padding: 22px;
+  }
+
+  .contact-card {
+    padding: 20px;
+  }
+
+  .contact-email {
+    word-break: break-word;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    gap: 15px;
+    text-align: center;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+}
