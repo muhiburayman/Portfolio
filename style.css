@@ -1271,3 +1271,35 @@ body.light-mode .floating-card {
 .institution-heading h4 {
     margin-bottom: 0;
 }
+/* Education institution logo alignment */
+.institution-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+}
+
+.institution-logo {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+    flex-shrink: 0;
+    background: #ffffff;
+    padding: 7px;
+    border-radius: 12px;
+    border: 1px solid var(--border);
+}
+
+.institution-heading > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.institution-heading h3 {
+    margin: 0 0 5px 0;
+}
+
+.institution-heading h4 {
+    margin: 0;
+}
